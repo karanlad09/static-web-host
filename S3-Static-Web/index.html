@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Cloud Project</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #0f172a;
+            color: #e2e8f0;
+            line-height: 1.6;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: #020617;
+            position: sticky;
+            top: 0;
+        }
+
+        nav h2 {
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: #e2e8f0;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .hero {
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 span {
+            color: #38bdf8;
+        }
+
+        .hero p {
+            max-width: 650px;
+            color: #94a3b8;
+            font-size: 18px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 25px;
+            background: #38bdf8;
+            color: #020617;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 70px 8%;
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 32px;
+        }
+
+        .about {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+            color: #94a3b8;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            border: 1px solid #334155;
+        }
+
+        .card h3 {
+            color: #38bdf8;
+            margin-bottom: 10px;
+        }
+
+        .project {
+            max-width: 800px;
+            margin: auto;
+            background: #1e293b;
+            padding: 30px;
+            border-radius: 10px;
+            border: 1px solid #334155;
+        }
+
+        .project p {
+            color: #94a3b8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #020617;
+            color: #64748b;
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            nav {
+                padding: 15px 5%;
+            }
+
+            nav a {
+                margin-left: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <h2>DevOpsLab</h2>
+
+        <div>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#project">Project</a>
+        </div>
+    </nav>
+
+
+    <section class="hero">
+
+        <h1>Cloud & <span>DevOps</span></h1>
+
+        <p>
+            A simple static website deployed using modern cloud
+            and DevOps technologies.
+        </p>
+
+        <a href="#project" class="btn">View Project</a>
+
+    </section>
+
+
+    <section id="about">
+
+        <h2>About</h2>
+
+        <div class="about">
+
+            <p>
+                This project demonstrates how a static website can be
+                containerized, automated using CI/CD, and deployed
+                on cloud infrastructure.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section id="skills">
+
+        <h2>DevOps Technologies</h2>
+
+        <div class="skills">
+
+            <div class="card">
+                <h3>Linux</h3>
+                <p>Server administration</p>
+            </div>
+
+            <div class="card">
+                <h3>AWS</h3>
+                <p>Cloud infrastructure</p>
+            </div>
+
+            <div class="card">
+                <h3>Docker</h3>
+                <p>Containerization</p>
+            </div>
+
+            <div class="card">
+                <h3>Terraform</h3>
+                <p>Infrastructure as Code</p>
+            </div>
+
+            <div class="card">
+                <h3>Ansible</h3>
+                <p>Configuration management</p>
+            </div>
+
+            <div class="card">
+                <h3>CI/CD</h3>
+                <p>Automated deployment</p>
+            </div>
+
+            <div class="card">
+                <h3>Kubernetes</h3>
+                <p>Container orchestration</p>
+            </div>
+
+            <div class="card">
+                <h3>CloudWatch</h3>
+                <p>Monitoring and logs</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="project">
+
+        <h2>My Project</h2>
+
+        <div class="project">
+
+            <h3>DevOps Static Website Deployment</h3>
+
+            <br>
+
+            <p>
+                The application is a simple HTML/CSS website.
+                It is containerized using Docker and deployed
+                to cloud infrastructure.
+            </p>
+
+            <br>
+
+            <p>
+                <strong>Deployment Pipeline:</strong>
+            </p>
+
+            <br>
+
+            <p>
+                GitHub → CI/CD → Docker → AWS → Monitoring
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <p>DevOps Cloud Project © 2026</p>
+
+    </footer>
+
+</body>
+</html>
