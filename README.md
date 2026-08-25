@@ -6,9 +6,6 @@ This project demonstrates the deployment of a static website using
 Amazon S3, CloudFront, Route 53, AWS Certificate Manager and
 Origin Access Control.
 
-## Architecture
-
-![AWS Architecture](architecture/architecture.png)
 
 ## AWS Services Used
 
